@@ -9,92 +9,118 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Roboto:wght@400;500;700&family=Russo+One&display=swap" rel="stylesheet">
     <title>Будівельні технології</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon"> 
 </head>
 <body>
-    <head>
+    <header>
         <div class="container nav-container" >
             <a class="logo-header" href="./index.html"><img src="./images/logo_old.png" alt="logo"></a>
             <nav>
                 <ul class="nav">
-                    <li><a class="current link" href="./index.html">Головна</a></li>
-                    <li><a class="link" href="">Про нас</a></li>
-                    <li><a class="link" href="">Послуги</a></li>
-                    <li><a class="link" href="">Наші об'єкти</a></li>
-                    <li><a class="link" href="">Контакти</a></li>
-                    <li>
-                        <a class="contacts-tel" href="tel:+380445016310">
-                            <!-- <div>
-                                <svg class="contacts-svg">
-                                    <use href="./image/symbol-defs.svg#icon-Tel"></use>
-                                </svg>
-                            </div> -->
-                            +38 (044) 501-63-10
-                        </a>
-                    </li>
+                    <li><a class="current" href="./index.html">Головна</a></li>
+                    <li><a href="#services-prices">Послуги</a></li>
+                    <li><a href="./portfolio.html">Наші об'єкти</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                    <li><a class="contacts-tel" href="tel:+380445016310">+38 (044) 501-63-10</a></li>
                 </ul>
             </nav>
         </div>
-    </head>
+    </header>
     <main>
         <section>
             <div class="hero"></div>
         </section>
         <section class="container">
             <h2 class="title">Про нас</h2>
-            <p>ТОВ "Будівельні технології" здійснює повний комплекс внутрішніх оздоблювальних робіт, генпідряд на ремонт та реконструкцію будівель та приміщень на об'єктах комерційного та державного значення.
-            Ліцензія на виконання робіт за класом наслідків СС3, Декларація МТБ, Сертифікат ISO 9001:2015
-            </p>
-            <h2 class="title">Послуги нашої компанії</h2>
-            <ul>
-                <li>Ремонт "під ключ"</li>
-                <li>Внутрішні оздоблювальні роботи</li> 
-                <li>Нове будівництво будівель</li>
-                <li>Поточний ремонт</li>
-                <li>Капітальний ремонт</li>
-                <li>Реконструкція</li>
+            <div class="about-us-content">
+                <img class="about-us-img" src="./images/about_us.jpg" alt="Команда ТОВ Будівельні технології">
+                <div>
+                    <p><span class="accent">ТОВ "Будівельні технології"</span> з 2001 р. здійснює повний комплекс внутрішніх оздоблювальних робіт, генпідряд на ремонт та реконструкцію будівель та приміщень на об'єктах комерційного та державного значення.</p>
+                    <ul class="about-us-list">
+                        <li><p>Ліцензія на виконання робіт за класом наслідків СС3;</p></li>
+                        <li><p>Декларація МТБ;</p></li>
+                        <li><p>Сертифікат ISO 9001:2015.</p></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="container services">
+            <a class="services-title" name="services-prices" href=""><h2 class="title ">Послуги нашої компанії</h2></a>
+            <ul class="services-list">
+                <li class="services-item">
+                    <p>Ремонт "під ключ"</p>
+                    <svg class="services-icon">
+                        <use href="./images/svg/symbol-defs.svg#icon-key"></use>
+                    </svg>
+                </li>
+                <!-- <li>Внутрішні оздоблювальні роботи</li>  -->
+                <li class="services-item">
+                    <p>Нове будівництво</p>
+                    <svg class="services-icon">
+                        <use href="./images/svg/symbol-defs.svg#icon-house"></use>
+                    </svg>
+                </li>
+                <li class="services-item">
+                    <p>Поточний ремонт</p>
+                    <svg class="services-icon">
+                        <use href="./images/svg/symbol-defs.svg#icon-measure"></use>
+                    </svg>
+                </li>
+                <li class="services-item">
+                    <p>Капітальний ремонт</p>
+                    <svg class="services-icon">
+                        <use href="./images/svg/symbol-defs.svg#icon-wall"></use>
+                    </svg>
+                </li>
+                <li class="services-item">
+                    <p>Реконструкція</p>
+                    <svg class="services-icon">
+                        <use href="./images/svg/symbol-defs.svg#icon-crane"></use>
+                    </svg>
+                </li>
             </ul>
         </section>
-        <section class="container">
-            <h2 class="title">Наші об'єкти</h2>
-            <ul class="filter">
-                <li class="fil-item"><button data-value="all" type="button" class="fil-button">Всі</button></li>
-                <li class="fil-item"><button data-value="current" type="button" class="fil-button">Поточний ремонт</button></li>
-                <li class="fil-item"><button data-value="capital" type="button" class="fil-button">Капітальний ремонт</button></li>
-                <li class="fil-item"><button data-value="reconstruction" type="button" class="fil-button">Реконструкція і реставрація</button></li>
-            </ul>
-            <ul class="list">
-                <li class="item website">
-                    <img class="objects-photo" src="./images/Воровского/фасад.jpg" alt="Київська дитяча школа мистецтв №2 ім. М. І. Вериківського">
-                    <h2 class="list-artical">Київська дитяча школа мистецтв №2 ім. М. І. Вериківського</h2>
-                    <p class="description">Реставрація</p>
-                </li>
-                <li class="item website">
-                    <img class="objects-photo" src="./images/Воровского/фасад.jpg" alt="Київська дитяча школа мистецтв №2 ім. М. І. Вериківського">
-                    <h2 class="list-artical">Мистецький ліцей "Зміна" Дніпровського району м. Києва</h2>
-                    <p class="description">Ремонт підвального приміщення під укриття для дитячого ліцею</p>
-                </li>
-                
-            </ul>
-        </section>
-        <section class="container">
-            <h2 class="title">Наші досягнення</h2>
-            <ul></ul>
+        <section class="achievements">
+            <div class="container">
+                <h2 class="title">Наші досягнення</h2>
+                <ul class="achievements-list">
+                    <li class="achievements-item"><span class="accent">20</span><p>років роботи</p></li>
+                    <li class="achievements-item"><span class="accent">1000</span><p>готових об'єктів</p></li>
+                    <li class="achievements-item"><span class="accent">1000</span><p>позитивних відгуків</p></li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
-        <div class="container">
-            <div class="adress-and-join">
-                <div class="adress-container">
-                    <a class="logo-footer" href="./index.html"></a>
-                    <address>
-                        <p class="street">г. Киев, пр-т Леси Украинки, 26</p>
-                        <ul>
-                            <li><a class="contacts mail" href="mailto:info@example.com">info@example.com</a></li>
-                            <li><a class="contacts tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
-                        </ul>
-                    </address>
-                </div>
-            </div>
+        <div class="container footer">
+            <a class="logo-header" href="./index.html"><img src="./images/logo_old.png" alt="logo"></a>
+            <nav>
+                <ul class="">
+                    <li><a class="footer-nav-item" href="../index.html">Головна</a></li>
+                    <li><a class="footer-nav-item" href="#services-prices">Послуги</a></li>
+                    <li><a class="footer-nav-item" href="./portfolio.html">Наші об'єкти</a></li>
+                </ul>
+            </nav>
+            <address>                
+                <a href="" name="contacts">
+                    <ul>
+                        <p class="accent">Наші контакти</p>
+                        <li class="footer-address-item"><p class="footer-street">01011, м. Київ, вул. Рибальська, 2, оф. 313</p></li>
+                        <li class="footer-address-item">
+                            <svg class="footer-icon">
+                                <use href="../images/svg/symbol-defs.svg#icon-E-mail"></use>
+                            </svg>
+                            <a href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li>
+                            <svg class="footer-icon">
+                                <use href="../images/svg/symbol-defs.svg#icon-Tel"></use>
+                            </svg>
+                            <a href="tel:+380445016310">+38 (044) 501-63-10</a>
+                        </li>
+                    </ul>
+                </a>
+            </address>
         </div>
     </footer>
 </body>
