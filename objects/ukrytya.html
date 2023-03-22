@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Roboto:wght@400;500;700&family=Russo+One&display=swap" rel="stylesheet">
     <title>Будівельні технології</title>
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
@@ -30,23 +31,53 @@
     </header>
     <main>
         <section class="container">
-            <h1 class="title">Зміна</h1>
+            <h1 class="object-title">Поточний (аварійний) ремонт підвального приміщення Мистецького ліцею "Зміна" під облаштування найпростішого укриття</h1>
             <div class="swiper">
+                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="image-slider_image">
                         <img class="slider-img" src="../images/Укриття/photo_1.jpg" alt="" />
                     </div>
-                    <div class="swiper-slide">
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-slider_image">
                         <img class="slider-img" src="../images/Укриття/photo_2.jpg" alt="Команда" />
                     </div>
-                    <div class="swiper-slide">
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-slider_image">
                         <img class="slider-img" src="../images/Укриття/photo_3.jpg" alt="Команда" />
                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-slider_image">
+                        <img class="slider-img" src="../images/Укриття/photo_4.jpg" alt="Команда" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-slider_image">
+                        <img class="slider-img" src="../images/Укриття/photo_5.jpg" alt="Команда" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-slider_image">
+                        <img class="slider-img" src="../images/Укриття/photo_6.jpg" alt="Команда" />
+                    </div>
+                  </div>
                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-                <div class="swiper-pagination"></div>
             </div>
+        </section>
+        <section class="container">
+            <p class="object-description"><span class="accent">Місце проведення робіт: </span>Мистецький ліцей "Зміна" Дніпровського району м. Києва</p>
+            <p class="object-description"><span class="accent">Вид робіт: </span>Ремонт підвального приміщення під укриття для дитячого ліцею</p>
         </section>
     </main>
     <footer>
@@ -81,5 +112,31 @@
             </address>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="module" src="./ukrytya.js"></script>
 </body>
 </html>
+
+
+<!-- <div class="swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="image-slider_image">
+                <img class="slider-img" src="../images/Укриття/photo_1.jpg" alt="" />
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="image-slider_image">
+                <img class="slider-img" src="../images/Укриття/photo_2.jpg" alt="Команда" />
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="image-slider_image">
+                <img class="slider-img" src="../images/Укриття/photo_3.jpg" alt="Команда" />
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+</div> -->

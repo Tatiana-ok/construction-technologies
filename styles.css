@@ -85,6 +85,10 @@ button {
   letter-spacing: 8px;
 }
 
+header {
+  text-align: center;
+}
+
 .nav-container {
   display: flex;
   height: 70px;
@@ -122,7 +126,16 @@ button {
 }
 
 .hero {
-  height: 50vh;
+  height: 100vh;
+  background-image: radial-gradient(circle, rgba(8, 17, 21, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("./images/wall.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-title {
+  font-family: var(--secondary-font);
+  font-size: 45px;
+  margin-top: 40vh;
 }
 
 .about-us-content {
@@ -359,4 +372,32 @@ button {
 .slider-img {
   width: 500px;
   height: auto;
+}
+
+.object-title {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.image-slider_image {
+  display: flex;
+  justify-content: center;
+}
+
+.slider-img {
+  width: 700px;
+  max-width: 100%;
+}
+
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+  color: #ffffff;
+}
+
+.object-description {
+  margin-top: 30px;
+  color: var(--primary-text-color);
+  font-size: 18px;
 }/*# sourceMappingURL=styles.css.map */
