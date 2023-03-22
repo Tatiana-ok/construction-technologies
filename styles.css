@@ -369,9 +369,9 @@ header {
   fill: var(--primary-text-color);
 }
 
-.slider-img {
-  width: 500px;
-  height: auto;
+.footer-contacts:hover, .footer-contacts:focus {
+  text-decoration: none;
+  cursor: default;
 }
 
 .object-title {
@@ -389,6 +389,7 @@ header {
 .slider-img {
   width: 700px;
   max-width: 100%;
+  height: auto;
 }
 
 .swiper .swiper-button-prev::after,

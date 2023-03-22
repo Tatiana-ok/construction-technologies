@@ -451,11 +451,15 @@ header{
   fill: var(--primary-text-color);
 }
 
-
-.slider-img{
-  width: 500px;
-  height: auto;
+.footer-contacts{
+  &:hover,
+  &:focus{
+    text-decoration: none;
+    cursor: default;
+  }
 }
+
+
 
 //Укриття
 
@@ -474,6 +478,7 @@ header{
 .slider-img{
   width: 700px;
   max-width: 100%;
+  height: auto;
 }
 
 .swiper .swiper-button-prev::after,
