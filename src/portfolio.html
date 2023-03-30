@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <!-- <link rel="stylesheet" href="../styles.css"> -->
+    <link rel="stylesheet" href="./styles.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Roboto:wght@400;500;700&family=Russo+One&display=swap" rel="stylesheet">
@@ -33,63 +34,64 @@
             <h2 class="title">Наші об'єкти</h2>
             <ul class="filter">
                 <li class="fil-item"><button data-value="all" type="button" class="fil-button">Всі</button></li>
+                <li class="fil-item"><button data-value="shelter" type="button" class="fil-button">Укриття</button></li>
                 <li class="fil-item"><button data-value="current" type="button" class="fil-button">Поточний ремонт</button></li>
                 <li class="fil-item"><button data-value="capital" type="button" class="fil-button">Капітальний ремонт</button></li>
                 <li class="fil-item"><button data-value="reconstruction" type="button" class="fil-button">Реконструкція і реставрація</button></li>
             </ul>
             <ul class="objects-list">
-                <li class="objects-item website">
+                <li class="objects-item reconstruction" id="1">
                     <img class="objects-photo" src="./images/Воровского/фасад.jpg" alt="Київська дитяча школа мистецтв №2 ім. М. І. Вериківського">
                     <div class="card-content">
                         <h2 class="list-artical">Київська дитяча школа мистецтв №2 ім. М. І. Вериківського</h2>
                         <p class="description">Реставрація пам'ятки архітектури</p>
                     </div>
                 </li>
-                <li class="objects-item website">
-                    <a href="./objects/ukrytya.html">
-                        <img class="objects-photo" src="./images/Укриття/photo_1.jpg" alt="Мистецький ліцей "Зміна" Дніпровського району м. Києва">
+                <li class="objects-item shelter" id="2">
+                    <a href="./objects.html">
+                        <img class="objects-photo" src="./images/Укриття/photo_1.jpg" alt="Мистецький ліцей «Зміна» Дніпровського району м. Києва">
                         <div class="card-content">
                             <h2 class="list-artical">Мистецький ліцей "Зміна" Дніпровського району м. Києва</h2>
                             <p class="description">Ремонт підвального приміщення під укриття для дитячого ліцею</p>
                         </div>
                     </a>
                 </li>
-                <li class="objects-item website">
-                    <img class="objects-photo" src="./images/Зміна/photo_2023-02-10_18-42-59.jpg" alt="Мистецький ліцей "Зміна" Дніпровського району м. Києва">
+                <li class="objects-item current" id="3">
+                    <img class="objects-photo" src="./images/Зміна/photo_2023-02-10_18-42-59.jpg" alt="Мистецький ліцей «Зміна» Дніпровського району м. Києва">
                     <div class="card-content">
                         <h2 class="list-artical">Мистецький ліцей "Зміна" Дніпровського району м. Києва</h2>
                         <p class="description">Поточний ремонт навчального класу</p>
                     </div>
                 </li>
-                <li class="objects-item website">
+                <li class="objects-item capital" id="4">
                     <img class="objects-photo" src="./images/Молодіжний/4-15-620x400.jpg" alt="Зона відпочинку «Молодіжна»">
                     <div class="card-content">
                         <h2 class="list-artical">Зона відпочинку «Молодіжна»</h2>
                         <p class="description">Капітальний ремонту елементів благоустрою, влаштування інженерних мереж</p>
                     </div>
                 </li>
-                <li class="objects-item website">
+                <li class="objects-item capital" id="5">
                     <img class="objects-photo" src="./images/Райдуга/райдуга.jpg" alt="Система аерації та благоустрій озера Райдуга">
                     <div class="card-content">
                         <h2 class="list-artical">Система аерації та благоустрій озера Райдуга</h2>
                         <p class="description">Будівництво інфраструктури, улаштування системи аерації та фонтанів</p>
                     </div>
                 </li>
-                <li class="objects-item website">
+                <li class="objects-item capital" id="6">
                     <img class="objects-photo" src="./images/Троєщина/Троєщина.JPG" alt="Зона відпочинку Троєщина">
                     <div class="card-content">
                         <h2 class="list-artical">Зона відпочинку "Троєщина"</h2>
                         <p class="description">Капітальний ремонту елементів благоустрою, влаштування інженерних мереж</p>
                     </div>
                 </li>
-                <li class="objects-item website">
+                <li class="objects-item capital" id="7">
                     <img class="objects-photo" src="./images/Пуща/Пуща_титул.jpg" alt="Очищення та облаштування озер Пущі-Водиці">
                     <div class="card-content">
                         <h2 class="list-artical">Очищення та облаштування озер Пущі-Водиці</h2>
                         <p class="description">Капітальний ремонт пішохідного містка, ремонт асфальтового покриття, благоустрій</p>
                     </div>
                 </li>
-                <li class="objects-item website">
+                <li class="objects-item capital" id="8">
                     <img class="objects-photo" src="./images/Будинок меблів/Будинок меблів_титул.jpg" alt="Кап. ремонт Центральний будинок меблів">
                     <div class="card-content">
                         <h2 class="list-artical">Центральний будинок меблів</h2>
@@ -129,5 +131,6 @@
             </address>
         </div>
     </footer>
+    <script type="module" src="./js/index.js"></script>
 </body>
 </html>

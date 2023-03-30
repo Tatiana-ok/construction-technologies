@@ -1,6 +1,32 @@
 {
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /construction-technologies/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tatiana-ok/construction-technologies"
+  },
+  "includePaths": [
+    "node_modules"
+  ],
+  "homepage": "https://tatiana-ok.github.io/construction-technologies/",
   "dependencies": {
+    "@parcel/transformer-image": "^2.8.3",
+    "gh-pages": "^5.0.0",
+    "i": "^0.3.7",
+    "npm": "^9.6.2",
+    "parcel-plugin-handlebars": "^0.4.4",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "postcss": "^8.4.21",
     "sass": "^1.59.3",
     "swiper": "^9.1.1"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.11",
+    "parcel": "^2.8.3",
+    "parcel-bundler": "^1.12.5"
   }
 }
