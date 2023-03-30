@@ -1,5 +1,5 @@
-import './styles.scss';
-import templateFunction from './template.hbs';
+import styles from '../styles.scss';
+import templateFunction from '../templates/object';
 
 //Objects
 
